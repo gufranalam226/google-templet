@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Templet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+    <style>
+        .signup{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Headding start -->
+    <section class="hsection">
+        <div class="headding">
+            <div class="logo"><a href="./">Google Templet</a></div>
+            <div class="search">
+                <input type="text" placeholder="Search templet here...">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./upload.html">Create</a></li>
+                    <li><a href="./explore.html">Explore</a></li>
+                    <li><a href="./signup-login.html">Login</a></li>
+                    <li><a href="./signup-login.html">Signup</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Headding end here -->
+
+    <!-- login start here -->
+    <section class="login-signup">
+        <div class="login log-in">
+            <div class="login-sec">
+                <div>Email or mobile number <br>
+                    <input type="alphanumeric" required>
+                </div>
+                
+                <div>Password <br>
+                    <input type="password" required> <br>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+                <div>New user? <a href="#" onclick="sign()">Click here</a> to create an account.</div>
+            </div>
+        </div>
+        <div class="login signup">
+            <div class="login-sec signup-sec">
+                <div>Enter Username <br>
+                    <input type="text" required>
+                </div>
+                <div>Enter Full Name <br>
+                    <input type="text" required>
+                </div>
+                <div>Enter Email <br>
+                    <input type="text" required>
+                </div>
+                <div>Choose gender <br>
+                    Male<input type="radio" name="gender">
+                    Female<input type="radio" name="gender">
+                    Other<input type="radio" name="gender">
+                </div>
+                
+                <div>Enter password <br>
+                    <input type="password" required> <br>
+                </div>
+                <div>Confirm password <br>
+                    <input type="password" required> <br>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+                <div >Already have an account? <a href="#" onclick="log()">Click here</a> to login.</div>
+            </div>
+        </div>
+    </section>
+    <!-- login end here -->
+
+    <!-- Footer section start here -->
+    <section class="footer">
+        <div class="footsec">
+            <div class="foot">
+                <div>Content</div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Letest</a></li>
+                    <li><a href="./upload.html">Create</a></li>
+                    <li><a href="./explore.html">Downloads</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <div>Other</div>
+                <ul>
+                    <li><a href="/">About us</a></li>
+                    <li><a href="/">Contact Us</a></li>
+                    <li><a href="/">Term & Condition</a></li>
+                    <li><a href="/">Help</a></li>
+                    <li><a href="/">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <div>Social media</div>
+                <ul>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://facebook.com/">Facebook</a></li>
+                    <li><a href="https://telegram.org/">Telegeam</a></li>
+                    <li><a href="https://discord.com/">Discord</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer section end here -->
+
+
+    <!-- Copytight section start here -->
+    <section class="copyright">
+        <div class="copy">
+            <div>Developed for Webhunt project</div>
+            <div>Google Templete</div>
+            <div>All rights reserved by Gufran Alam</div>
+        </div>
+    </section>
+    <!-- Copytight section end here -->
+    <script>
+        let login = document.querySelector(".log-in")
+        let signup = document.querySelector(".signup")
+
+        function sign(){
+            signup.style.display= "flex"
+            login.style.display = "none"
+        }
+        function log(){
+            signup.style.display= "none"
+            login.style.display = "flex"
+        }
+
+
+    </script>
+</body>
+</html>
